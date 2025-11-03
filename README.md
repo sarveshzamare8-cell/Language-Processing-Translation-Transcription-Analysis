@@ -63,3 +63,68 @@ See `/reports/evaluation_results.pdf` for full tables and plots.
 ---
 
 ## Repo structure
+
+---
+## 🧠 Introduction
+This project focuses on **Language Translation and Transcription Analysis**, combining **Machine Translation (MT)** and **Automatic Speech Recognition (ASR)**.  
+It evaluates rule-based, statistical, and neural approaches to improve contextual accuracy and usability in multilingual environments.
+
+---
+
+## ⚙️ Project Workflow / Architecture
+1. **Data Collection:** Gathered English and Hindi text datasets along with speech samples.
+2. **Preprocessing:** Cleaned, normalized, and aligned bilingual text and audio data.
+3. **Model Training:**
+   - Fine-tuned neural translation model (`model_mt.pt`).
+   - Trained and evaluated ASR model (`asr_model.h5`).
+4. **Evaluation:** 
+   - Translation quality using **BLEU Score**.
+   - Speech recognition performance using **Word Error Rate (WER)**.
+5. **Reporting:** Generated comparative visualizations and insights.
+
+---
+
+## 🧩 Technologies Used
+- Python  
+- TensorFlow / PyTorch  
+- Hugging Face Transformers  
+- SpeechRecognition  
+- NumPy, Pandas, Matplotlib  
+- Jupyter Notebook  
+
+---
+
+## 📊 Results
+- **BLEU Score:** Improved by ~22% after domain-specific fine-tuning.  
+- **WER Reduction:** Achieved 15% lower WER compared to baseline ASR models.  
+- Demonstrated high contextual accuracy for bilingual data (English ↔ Hindi).
+
+---
+
+## 🚀 How to Run
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run preprocessing
+python scripts/preprocessing.py
+
+# 3. Run translation pipeline
+python scripts/translation_pipeline.py
+
+# 4. Evaluate ASR model
+python scripts/asr_evaluation.py
+---
+
+## 🔮 Future Work
+- Extend translation to **additional regional languages**.  
+- Integrate **real-time transcription APIs** for live speech input.  
+- Experiment with **transformer-based multilingual ASR models**.
+
+---
+
+## 👨‍💻 Author
+**Sarvesh Zamare**  
+📧 [sarveshzamare8@gmail.com](mailto:sarveshzamare8@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/sarvesh-zamare-152051282/)
